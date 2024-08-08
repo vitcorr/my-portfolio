@@ -15,30 +15,64 @@ const NavBar = () => {
         <div>
             <img src={Logo} alt="Logo Image" style={{width: '70px'}}/>
         </div>
+
+        {/*Social Icons*/}
+        <div className='flex flex-row md:hidden'>
+            <ul className='flex'>
+                <li className='w-[60px] h-[60px] flex justify-between items-center bg-blue-600'>
+                    <a className = 'flex justify-between items-center w-full text-gray-300' 
+                    href="https://www.linkedin.com/in/victor-kolawole-550976292/" target='_blank'>
+                         <FaLinkedin size={30} />
+                    </a>
+                </li>
+
+                <li className='w-[60px] h-[60px] flex justify-between items-center bg-[#333333]'>
+                    <a className = 'flex justify-between items-center w-full text-gray-300' 
+                    href="https://github.com/vitcorr" target='_blank'>
+                         <FaGithub size={30} />
+                    </a>
+                </li>
+
+                <li className='w-[60px] h-[60px] flex justify-between items-center bg-[#6fc2b0]'>
+                    <a className = 'flex justify-between items-center w-full text-gray-300' 
+                    href="mailto:victorkolaw@gmail.com">
+                         <HiOutlineMail size={30} />
+                    </a>
+                </li>
+
+                <li className='w-[60px] h-[60px] flex justify-between items-center bg-[#565f69]'>
+                    <a className = 'flex justify-between items-center w-full text-gray-300' 
+                    href="/resume.pdf">
+                         <BsFillPersonLinesFill size={30} />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         {/*menu*/}
         <ul className='hidden md:flex'>
             <li>
-            <Link to="home" smooth = {true} duration={500}>
+            <Link className='hover:text-cyan-600' to="home" smooth = {true} duration={500}>
                 Home
             </Link>
             </li>
             <li>
-            <Link to="about" smooth = {true} duration={500}>
+            <Link className='hover:text-cyan-600' to="about" smooth = {true} duration={500}>
                 About
             </Link>
             </li>
             <li>
-            <Link to="skills" smooth = {true} duration={500}>
+            <Link className='hover:text-cyan-600'to="skills" smooth = {true} duration={500}>
                 Skills
             </Link>
             </li>
             <li>
-            <Link to="work" smooth = {true} duration={500}>
+            <Link className='hover:text-cyan-600'to="work" smooth = {true} duration={500}>
                 Work
             </Link>
             </li>
             <li>
-            <Link to="contact" smooth = {true} duration={500}>
+            <Link className='hover:text-cyan-600'to="contact" smooth = {true} duration={500}>
                 Contact
             </Link>
             </li>
@@ -78,32 +112,32 @@ const NavBar = () => {
         </ul>
 
         {/*Social Icons*/}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                     <a className = 'flex justify-between items-center w-full text-gray-300' 
-                    href="/">
+                    href="https://www.linkedin.com/in/victor-kolawole-550976292/" target='_blank'>
                         Linkedin <FaLinkedin size={30} />
                     </a>
                 </li>
 
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
                     <a className = 'flex justify-between items-center w-full text-gray-300' 
-                    href="/">
+                    href="https://github.com/vitcorr" target='_blank'>
                         Github <FaGithub size={30} />
                     </a>
                 </li>
 
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
                     <a className = 'flex justify-between items-center w-full text-gray-300' 
-                    href="/">
+                    href="mailto:victor.kolaw@gmail.com">
                         Email <HiOutlineMail size={30} />
                     </a>
                 </li>
 
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                     <a className = 'flex justify-between items-center w-full text-gray-300' 
-                    href="/">
+                    href="/resume.pdf">
                         Resume <BsFillPersonLinesFill size={30} />
                     </a>
                 </li>
