@@ -35,7 +35,7 @@ const NavBar = () => {
 
                 <li className='w-[60px] h-[60px] flex justify-between items-center bg-[#6fc2b0]'>
                     <a className = 'flex justify-between items-center w-full text-gray-300' 
-                    href="mailto:victorkolaw@gmail.com">
+                    href="mailto:victor.kolaw@gmail.com">
                          <HiOutlineMail size={30} />
                     </a>
                 </li>
