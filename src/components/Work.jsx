@@ -5,6 +5,8 @@ import carleton from '../assets/projects/carleton.jpg'
 import water from '../assets/projects/ogl.png'
 import health from '../assets/projects/health.jpg'
 import portfolio from '../assets/projects/portfolio.png'
+import kritique from '../assets/projects/kritique.png'
+
 
 
 
@@ -38,13 +40,43 @@ const Work = () => {
                     {/*Hover Effects */}
                     <div className='invisible max-h-0 group-hover:visible'>
                         <p className='p-3'>
-                            This project is a reminder service that notifies you when a seat opens up in any class of your choice at Carleton University.
+                            A reminder service that notifies you when a seat opens up in any class of your choice at Carleton University.
                         </p>
                         <div className='pt-8 text-center'>
                             <a href="/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
                             <a href="https://github.com/vitcorr/carleton-course-notifier">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/*Grid Item*/}
+                <div className='shadow-lg shadow-[#040c16] group container rounded-md mx-auto border-[1px] border-gray-700 content-div'>
+                    <h2 className='text-center py-2 text-base font-bold text-white tracking-wider bg-[#122d55] group-hover:hidden'>
+                        Kritique
+                    </h2>
+
+                   <img src={kritique} alt="water" className='mx-auto h-40 group-hover:hidden' />
+                   
+                   <div className='tracking-wide  mt-2 text-center group-hover:hidden'>
+                        <p>
+                            React, Python, MongoDB, GenAI  
+                        </p>
+                   </div>
+
+                    {/*Hover Effects */}
+                    <div className='invisible max-h-0 group-hover:visible'>
+                        <p className='p-3'>
+                        A revolutionary review site that combines the power of real users and AI to provide authentic reviews of any website on the World Wide Web
+                        </p>
+                        <div className='pt-8 text-center'>
+                            <a href="https://kritique-web.vercel.app/">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Site</button>
+                            </a>
+                            <a href="https://github.com/vitcorr/Kritique">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
